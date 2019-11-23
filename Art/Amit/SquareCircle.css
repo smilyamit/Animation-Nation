@@ -1,0 +1,45 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 192, 203);
+  display: inline-block;
+  animation: square-to-circle 2s 1s infinite alternate;   /* FOr fire fox its needed*/
+  outline: 1px solid transparent;     /* FOr fire fox its needed*/
+}
+
+body {
+  background: rgb(130, 192, 221);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes square-to-circle {   
+  0%  {     
+    border-radius:0 0 0 0;     
+    background:coral;     
+    transform:rotate(0deg);   
+  }   
+  25%  {     
+    border-radius:50% 0 0 0;     
+    background:darksalmon;     
+    transform:rotate(45deg);   
+  }   
+  50%  {     
+    border-radius:50% 50% 0 0;     
+    background:indianred;     
+    transform:rotate(90deg);   
+  }   
+  75%  {      
+    border-radius:50% 50% 50% 0;     
+    background:lightcoral;     
+    transform:rotate(135deg);   
+  }   
+  100% {       
+     border-radius:50%;     
+     background:rgb(255, 192, 203);     
+     transform:rotate(180deg);   
+  } 
+}
+
